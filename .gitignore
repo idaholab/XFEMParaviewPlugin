@@ -1,0 +1,15 @@
+CMakeCache.txt
+CMakeFiles/
+Makefile
+*.args
+*.dylib
+*.xsl
+*.cmake
+doc/
+SMXFEMClipPartialElementsInit.cxx
+SMXFEMClipPartialElements_Plugin.cxx
+SMXFEMClipPartialElements_Plugin.h
+SMXFEMClipPartialElements_doc.h
+XFEMClipPartialElements.xml.xml
+vtkSMXML_SMXFEMClipPartialElements.h
+vtkXFEMClipPartialElementsClientServer.cxx

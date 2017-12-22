@@ -1,0 +1,23 @@
+<!-- Copyright (c) 2017 Battelle Energy Alliance, LLC  -->
+<ServerManagerConfiguration>
+  <ProxyGroup name="filters">
+    <SourceProxy name="XFEMClipPartialElements" class="vtkXFEMClipPartialElements" label="XFEMClipPartialElements">
+      <Documentation
+        long_help="Clip partial elements cut by XFEM cut plane."
+        short_help="Clip partial elements cut by XFEM cut plane.">
+      </Documentation>
+
+      <InputProperty
+        name="Input"
+        command="SetInputConnection">
+        <ProxyGroupDomain name="groups">
+          <Group name="sources" />
+          <Group name="filters" />
+        </ProxyGroupDomain>
+        <DataTypeDomain name="input_type">
+          <DataType value="vtkDataSet" />
+        </DataTypeDomain>
+      </InputProperty>
+    </SourceProxy>
+  </ProxyGroup>
+</ServerManagerConfiguration>
