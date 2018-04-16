@@ -47,8 +47,8 @@ class VTK_EXPORT vtkXFEMClipPartialElements : public vtkUnstructuredGridAlgorith
 public:
   static vtkXFEMClipPartialElements* New();
   vtkTypeMacro(vtkXFEMClipPartialElements, vtkUnstructuredGridAlgorithm);
-  void PrintSelf(ostream& os, vtkIndent indent);
-  virtual int RequestData(vtkInformation *, vtkInformationVector **, vtkInformationVector *);
+  void PrintSelf(ostream& os, vtkIndent indent) override;
+  virtual int RequestData(vtkInformation *, vtkInformationVector **, vtkInformationVector *) override;
 
   // Description:
   // Set/get the desired precision for the output types. See the documentation
